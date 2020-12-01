@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadores</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script type="text/javascript" src="./JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+
+</script>
+
+
+<body onload="verificar_autenticacao()">
+    <header class="navbar">
+        <div class="menu container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#space">Notícias</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="#rodape">Contato</a></li>
+                <li style="margin-left: 500px;"><a onclick="logoff()" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="space"></div>
+
+    <section class="titlePC">
+        <div class="container">
+            <div style="margin: 0; width: 20%; float: left;"><h1>PC</h1></div>
+            <a href="PS.html"><i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;" class="fas fa-arrow-alt-circle-right fa-5x"></i></a>
+        </div>
+    </section>
+
+    <section class="carrosel">
+        <div class="imgCarrosel">
+            <div>
+                <button class="btnBack" onclick="tras()">
+                    <i class="fas fa-arrow-alt-circle-left fa-5x"></i>
+                </button>
+            </div>
+            <img id="foto">
+            <div>
+                <button class="btnFront" onclick="frente()">
+                    <i class="fas fa-arrow-alt-circle-right fa-5x"></i>
+                </button>
+            </div>   
+        </div>
+    </section>
+
+    <hr style="margin-bottom: 30px;" class="container">
+
+    <section class="container">
+        <div style="display: flex;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/warzone.jpg" alt="">
+                <h1>Call Of Duty Warzone</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/cyber.jpg" alt="">
+                <h1>Cyberpunk 2077</h1>
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/lol.jpg" alt="">
+                <h1>League of Legends</h1>
+                <div>
+                    <p>6</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/fortnite.jpg" alt="">
+                <h1>Fortnite</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/mine.jpg" alt="">
+                <h1>Minecraft</h1>
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/cs.jpg" alt="">
+                <h1>Counter-Strike</h1>
+                <div>
+                    <p>8.5</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/01.jpg" alt="">
+                <h1>Valorant</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/25.jpg" alt="">
+                <h1>Resident Evil 2</h1>
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/26.jpg" alt="">
+                <h1>The Witcher 3: Wild Hunt</h1>
+                <div>
+                    <p>8.5</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;  margin-bottom: 50px;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/27.jpg" alt="">
+                <h1>Grand Theft Auto V</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div style="background-color: transparent;" class="cardReview">
+                <img src="" alt="">
+                <h1></h1>
+            </div>
+            <div style="background-color: transparent;" class="cardReview">
+                <img src="" alt="">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="rodape" class="footer">
+        <center>
+            <div style="width: 11%;"></div>
+            <div class="card-footer">
+                <h1 style="font-weight: 400;">Um pouco sobre mim:</h1>
+                <p> Quando criança sempre gostei muito de tecnologia porque ela me despertava uma curiosidade em saber
+                    como funcionavam os processos de criação para a função que eu estava vendo, e isso só aumentou com a
+                    chegada dos video games, e com essa curiosidade comecei a pesquisar sobre desenvolvimento de games e
+                    programação, dai que veio o interesse pela area e por avanços da tecnologia.</p>
+
+                <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
+                    lugar certo!</p>
+                <br>
+                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <hr>
+            </div>
+            <div class="secondCard-footer">
+                    <div>
+                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                        <p>Git Hub</p>
+                    </div>
+                    <div>
+                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                        <p>Linkedin</p>
+                    </div>
+                    <div>
+                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                        <p>E-mail</p>
+                    </div>
+                    <div>
+                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                        <p>Telefone</p>
+                    </div>
+            </div>
+        </center>
+    </section>
+</body>
+
+</html>
+
+<script>
+let fotosPC = ['./IMG/01.jpg', './IMG/02.jpg', './IMG/03.jpg', './IMG/04.jpg', './IMG/05.jpg', './IMG/06.jpg', './IMG/07.jpg'];
+let contFoto = 0;
+foto.src = fotosPC[0]
+
+function frente() {
+    contFoto++;
+    foto.src = fotosPC[contFoto];
+    if (contFoto == 7) {
+        contFoto = 6;
+        foto.src = fotosPC[contFoto];
+    }
+}
+function tras() {
+    contFoto--;
+    foto.src = fotosPC[contFoto];
+    if (contFoto == -1) {
+        contFoto = 0;
+        foto.src = fotosPC[contFoto];
+    }
+}
+</script>

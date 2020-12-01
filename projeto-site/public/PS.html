@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadores</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script type="text/javascript" src="./JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="menu container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#space">Notícias</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="#rodape">Contato</a></li>
+                <li style="margin-left: 500px;"><a onclick="logoff()" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="space"></div>
+
+
+    <section class="titlePC">
+        <div class="container">
+            <div style="margin: 0; width: 20%; float: left;">
+                <h1>PlayStation</h1>
+            </div>
+            <a href="XBOX.html">
+                <i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
+                    class="fas fa-arrow-alt-circle-right fa-5x"></i>
+            </a>
+            <a href="PC.html">
+                <i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
+                    class="fas fa-arrow-alt-circle-left fa-5x"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="carrosel">
+        <div class="imgCarrosel">
+            <div>
+                <button class="btnBack" onclick="trasPS()">
+                    <i class="fas fa-arrow-alt-circle-left fa-5x"></i>
+                </button>
+            </div>
+            <img id="imagem">
+            <div>
+                <button class="btnFront" onclick="frentePS()">
+                    <i class="fas fa-arrow-alt-circle-right fa-5x"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div style="display: flex;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/08.jpg" alt="">
+                <h1>Uncharted 4: A Thief's End</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/09.jpg" alt="">
+                <h1>The Last of Us</h1>
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/10.jpg" alt="">
+                <h1>Days Gone</h1>
+                <div>
+                    <p>8.5</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/11.jpg" alt="">
+                <h1>Fifa 21</h1>
+                <div>
+                    <p>7</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/12.jpg" alt="">
+                <h1>Spider-Man</h1>
+                <div>
+                    <p>9</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/13.jpg" alt="">
+                <h1>God of War</h1>
+                <div>
+                    <p>8.5</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; margin-bottom: 50px;" class="cont">
+            <div class="cardReview">
+                <img src="./IMG/22.jpg" alt="">
+                <h1>Detroit: Become Human</h1>
+                <div>
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="cardReview">
+                <img src="./IMG/23.jpg" alt="">
+                <h1>Final Fantasy VII Remake</h1>
+                <div>
+                    <p>8.7</p>
+                </div>
+            </div>
+            <div style="background-color: transparent;" class="cardReview">
+                <img src="" alt="">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="rodape" class="footer">
+        <center>
+            <div style="width: 11%;"></div>
+            <div class="card-footer">
+                <h1 style="font-weight: 400;">Um pouco sobre mim:</h1>
+                <p> Quando criança sempre gostei muito de tecnologia porque ela me despertava uma curiosidade em saber
+                    como funcionavam os processos de criação para a função que eu estava vendo, e isso só aumentou com a
+                    chegada dos video games, e com essa curiosidade comecei a pesquisar sobre desenvolvimento de games e
+                    programação, dai que veio o interesse pela area e por avanços da tecnologia.</p>
+
+                <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
+                    lugar certo!</p>
+                <br>
+                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <hr>
+            </div>
+            <div class="secondCard-footer">
+                    <div>
+                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                        <p>Git Hub</p>
+                    </div>
+                    <div>
+                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                        <p>Linkedin</p>
+                    </div>
+                    <div>
+                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                        <p>E-mail</p>
+                    </div>
+                    <div>
+                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                        <p>Telefone</p>
+                    </div>
+            </div>
+        </center>
+    </section>
+</body>
+
+</html>
+
+<script>
+    let fotosPS = ['./IMG/08.jpg', './IMG/09.jpg', './IMG/10.jpg', './IMG/11.jpg', './IMG/12.jpg', './IMG/13.jpg', './IMG/14.jpg'];
+    let contFoto = 0;
+    imagem.src = fotosPS[0];
+
+    function frentePS() {
+        contFoto++;
+        imagem.src = fotosPS[contFoto];
+        if (contFoto == 7) {
+            contFoto = 6;
+            imagem.src = fotosPS[contFoto];
+        }
+    }
+    function trasPS() {
+        contFoto--;
+        imagem.src = fotosPS[contFoto];
+        if (contFoto == -1) {
+            contFoto = 0;
+            imagem.src = fotosPS[contFoto];
+        }
+    }
+</script>

@@ -1,0 +1,434 @@
+body{
+    margin: 0px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* COMEÇO NAVBAR*/
+.navbar{
+    background: rgb(40,120,189);
+    background: linear-gradient(90deg, rgba(40,120,189,1) 0%, rgba(29,233,253,1) 50%, rgba(69,252,188,1) 100%);
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    position: fixed;
+}
+.menu ul{
+    display: flex;
+    margin-top: 40px;
+}.menu ul li{
+    list-style: none;
+    margin-right: 50px;
+}.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* FIM DA NAVBAR */
+
+/* ESPAÇOS */
+#space{
+    height: 100px;
+}
+#space-title{
+    height: 100px;
+}
+/* ESPAÇOS */
+
+.btn{
+    margin: 0px 0px 0px 400px;
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.conteudo{
+    height: 84.9vh;
+    background-color:rgb(29, 35, 41);
+    clear: both;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    background-color:  rgb(29, 35, 41);
+    color: white;
+    padding: 15px;
+}.text{
+    padding: 10PX;
+    margin: 0px;
+    font-size: 20px;
+}.text-card{
+    width: 41%;
+    float: left;
+    margin-top: 6.5%;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+}
+.container-two{
+    width: 70%;
+}
+.notice-one{
+    height: 65%;
+    width: 47.5%;
+    float: left;
+    margin: 15px 0px 0px 15px;
+    text-align: center;
+    color: white;
+    background-color:rgb(64, 70, 77);
+    border-radius: 10px;
+}
+.notice-two{
+    height: 65%;
+    width: 47.5%;
+    float: right;
+    margin: 15px 15px 0px 0px;
+    text-align: center;
+    color: white;
+    background-color:rgb(64, 70, 77);
+    border-radius: 10px;
+}
+.linha-vertical {
+    height: 405px;
+    width: 2px;
+    background-color: white;
+    float: right;
+    clear: both;
+    margin-top: -43.5%;
+}
+.card{
+    height: 120px;
+    margin-bottom: 10px;
+    background-color:  rgb(64, 70, 77);
+    border-radius: 10px;    
+    
+}.card-left{
+    width: 28%;
+    float: right;
+    padding: 10px;
+    margin-top: 0.5%;
+} .backg :hover{
+    background-color:  rgb(75, 144, 224);
+}
+
+/* TITULO DOS CARDS*/
+
+.second-title h1{
+    font-weight: 500;
+    margin: 5px 0px -37px 191px;
+}
+
+/* PRIMEIRO CARD DE CONTEUDO */
+
+.materias{
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+.materias img{
+    border-radius: 20px;
+    height: 100px;
+    widows: 50px;
+    float: left;
+}
+.materias h1{
+    color: black;
+    font-weight: 500;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+.materias a{
+    text-decoration-line: none;
+    color: black;
+}
+.materias h1 a:hover{
+    color: rgba(40,120,189);
+}
+.materias p{
+    float: left;
+    margin: 0px 0px 0px 30px;
+}
+/* FIM DAS NOTICIAS */
+
+/* FOOTER */
+
+.footer{
+    background-color:rgb(29, 35, 41);
+    height: 73vh;
+    width: 100%; 
+    color: white;
+    text-align: center;
+    /* display: flex; */
+}
+.card-footer{
+    padding: 20px;
+    width: 95%;
+    height: 50%;
+    /* border-radius: 15px; */
+    /* border: solid 2px white; */
+    text-align: -webkit-center;
+}
+.card-footer p{
+    font-size: 20px;
+    width: 90%;
+}
+.secondCard-footer{
+    /* padding: 0px; */
+    width: 53%;
+    /* border-radius: 15px; */
+    /* border: solid 2px white; */
+    display: flex;
+    text-align: center;
+}
+.secondCard-footer div{
+    margin: 15px 40px;
+}
+.secondCard-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+
+/* PAGINA GAMES*/
+
+.conteudoGames{
+    height: 84.9vh;
+}
+
+.cardGames{
+    margin-top: 45px;
+    display: flex;
+}
+
+.cardGames div {
+    height: 65vh;
+    width: 50%;
+    border-radius: 15px;
+    margin: 15px 20px 0px 20px;
+    border: 2px solid black;
+}
+
+.cardGames div h1 {
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-top: -16.5px;
+    padding: 30px;
+    background-color: rgb(64, 70, 77);
+    border-radius: 11px 11px 0px 0px;
+}
+
+.cardGames div img{
+    height: 100px;
+    padding: 40px;
+}
+
+.btnGames{
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;    
+}
+
+.btnGames:hover{
+    cursor: pointer;
+}
+
+/* FIM DA PAGINA GAMES */
+
+/* COMEÇO DO MODAL */
+.modal{
+    color: white;
+}
+
+.modal form{
+    text-align: center;
+    margin-top: 10%;
+    z-index: 1;
+} 
+
+.modal input{
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px 0px 20px 0px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.inLogin p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.inSenha p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.btnLoginGames{
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    margin-top: 8%;
+    margin-left: 37%;
+    margin-bottom: 24%;
+}
+
+.btnLoginGames:hover{
+    cursor: pointer;
+}
+
+.btnCadGames{
+    border-top: 1px solid #4b4b4b;
+    background: rgb(64, 70, 77);
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    margin-top: 8%;
+    margin-left: 34%;
+    margin-bottom: 7.5%;
+}
+
+.btnCadGames:hover{
+    cursor: pointer;
+}
+
+.btnCloseModal{
+    background: transparent;
+    border: none;
+}
+
+.btnCloseModal:hover{
+    cursor: pointer;
+}
+
+
+
+/* CARROSEL PC */
+
+.titlePC{
+    background-color: black;
+    height: 17vh;
+}
+
+.titlePC h1{
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.carrosel{
+    height: 67.8vh;
+    margin-top: 10px;
+}
+
+.imgCarrosel{
+    display: flex;
+}
+
+.imgCarrosel div{
+    width: 20%;
+}
+
+.imgCarrosel img{
+    width: 60%;
+    max-height: 65vh;
+}
+
+.btnBack{
+    height: 65vh;
+    float: right;
+    background-color: lightgray;
+    border-radius: 15px 0px 0px 15px; 
+    border: solid 4px black;
+}
+
+.btnFront{
+    height: 65vh;
+    background-color: lightgray;
+    border-radius: 0px 15px 15px 0px;
+    border: solid 4px black;
+}
+
+.cont{
+    display: flex;
+}
+
+.cardReview{
+    width: 32%;
+    margin: 10px;
+    background-color:rgb(29, 35, 41);
+    height: 45vh;
+    border-radius: 25px;
+}
+
+.cardReview img{
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.cardReview h1{
+    margin: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 300;
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+.cardReview div{
+    float: right;
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 16px;
+    color:white;
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.cardReview div p{
+    text-align: center;
+    font-size: 42px;
+    padding: 4px;
+    margin: 0;
+}

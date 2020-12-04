@@ -14,13 +14,13 @@
 
     let usuario;
 
-    verificar_autenticacao();
+    // verificar_autenticacao();
 
 
 </script>
 
 
-<body onload="verificar_autenticacao()">
+<body>
     <header class="navbar">
         <div class="menu container">
             <ul>
@@ -28,7 +28,7 @@
                 <li><a href="#space">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <li style="margin-left: 500px;"><a onclick="logoff()" href="#">Sair</a></li>
+                <li style="margin-left: 500px;"><a style="color: black;" onclick="logoff()" href="#">Sair</a></li>
             </ul>
         </div>
     </header>
@@ -37,8 +37,11 @@
 
     <section class="titlePC">
         <div class="container">
-            <div style="margin: 0; width: 20%; float: left;"><h1>PC</h1></div>
-            <a href="PS.html"><i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;" class="fas fa-arrow-alt-circle-right fa-5x"></i></a>
+            <div style="margin: 0; width: 20%; float: left;">
+                <h1>PC</h1>
+            </div>
+            <a href="PS.html"><i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
+                    class="fas fa-arrow-alt-circle-right fa-3x"></i></a>
         </div>
     </section>
 
@@ -54,53 +57,93 @@
                 <button class="btnFront" onclick="frente()">
                     <i class="fas fa-arrow-alt-circle-right fa-5x"></i>
                 </button>
-            </div>   
+            </div>
         </div>
     </section>
-
+    <div id="space"></div>
+    <h1 style="font-weight: 400;" class="container">Games Reviews</h1>
     <hr style="margin-bottom: 30px;" class="container">
 
     <section class="container">
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="cod" class="cardReview">
                 <img src="./IMG/warzone.jpg" alt="">
                 <h1>Call Of Duty Warzone</h1>
                 <div>
                     <p>8</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Warzone permite um combate em um modo multijogador on-line entre 150 jogadores na cidade
+                        fictícia de Verdansk, que é vagamente baseada na cidade de Donetsk, no leste da Ucrânia. Ele
+                        apresenta uma progressão de plataforma-cruzada entre os dois jogos.
+                        <br><br>
+                        Desenvolvedora: Actvision <br>
+                        Ano: 2019 <br>
+                        Plataformas: PC / Playstation / Xbox
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="cyber" class="cardReview">
                 <img src="./IMG/cyber.jpg" alt="">
                 <h1>Cyberpunk 2077</h1>
                 <div>
                     <p>9</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        O Cyberpunk 2077 é uma história de aventura e ação de mundo aberto ambientada em Night City, uma
+                        megalópole obcecada por poder, glamour e modificações corporais. Você joga como V, um bandido
+                        mercenário em busca de um implante único que é a chave para a imortalidade.
+                        <br><br>
+                        Desenvolvedora: CD Projekt Red <br>
+                        Ano: 2020 <br>
+                        Plataformas: PC / Playstation / Xbox
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="lol" class="cardReview">
                 <img src="./IMG/lol.jpg" alt="">
                 <h1>League of Legends</h1>
                 <div>
                     <p>6</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Em League of Legends, os jogadores assumem o papel de "invocadores", que controlam campeões com
+                        habilidades únicas, que formam um time e lutam contra o time adversário de outros invocadores ou
+                        controlados pelo computador. No modo mais popular do jogo, o objetivo de cada time é destruir o
+                        Nexus da equipe adversária, uma construção localizada na base e protegida por outras estruturas.
+                        Cada partida de League of Legends é distinta, pois os campeões sempre começam fracos e progridem
+                        através da acumulação de ouro e da experiência ao longo do jogo.
+                        <br><br>
+                        Desenvolvedora: Riot Games <br>
+                        Ano: 2009 <br>
+                        Plataformas: PC
+                    </p>
+                </center>
             </div>
         </div>
 
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="fortnite" class="cardReview">
                 <img src="./IMG/fortnite.jpg" alt="">
                 <h1>Fortnite</h1>
                 <div>
                     <p>8</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="minecraft" class="cardReview">
                 <img src="./IMG/mine.jpg" alt="">
                 <h1>Minecraft</h1>
                 <div>
                     <p>9</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="cs" class="cardReview">
                 <img src="./IMG/cs.jpg" alt="">
                 <h1>Counter-Strike</h1>
                 <div>
@@ -110,21 +153,21 @@
         </div>
 
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="valorant" class="cardReview">
                 <img src="./IMG/01.jpg" alt="">
                 <h1>Valorant</h1>
                 <div>
                     <p>8</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="resident" class="cardReview">
                 <img src="./IMG/25.jpg" alt="">
                 <h1>Resident Evil 2</h1>
                 <div>
                     <p>9</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="witcher" class="cardReview">
                 <img src="./IMG/26.jpg" alt="">
                 <h1>The Witcher 3: Wild Hunt</h1>
                 <div>
@@ -133,7 +176,7 @@
             </div>
         </div>
         <div style="display: flex;  margin-bottom: 50px;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="gtav" class="cardReview">
                 <img src="./IMG/27.jpg" alt="">
                 <h1>Grand Theft Auto V</h1>
                 <div>
@@ -164,30 +207,30 @@
                 <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
                     lugar certo!</p>
                 <br>
-                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <p>Todos os direitos reservados &COPY; 2020</p>
                 <hr>
             </div>
             <div class="secondCard-footer">
-                    <div>
-                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
-                        <p>Git Hub</p>
-                    </div>
-                    <div>
-                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
-                        <p>Facebook</p>
-                    </div>
-                    <div>
-                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
-                        <p>Linkedin</p>
-                    </div>
-                    <div>
-                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
-                        <p>E-mail</p>
-                    </div>
-                    <div>
-                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
-                        <p>Telefone</p>
-                    </div>
+                <div>
+                    <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                    <p>Git Hub</p>
+                </div>
+                <div>
+                    <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                    <p>Linkedin</p>
+                </div>
+                <div>
+                    <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                    <p>E-mail</p>
+                </div>
+                <div>
+                    <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                    <p>Telefone</p>
+                </div>
             </div>
         </center>
     </section>
@@ -196,24 +239,24 @@
 </html>
 
 <script>
-let fotosPC = ['./IMG/01.jpg', './IMG/02.jpg', './IMG/03.jpg', './IMG/04.jpg', './IMG/05.jpg', './IMG/06.jpg', './IMG/07.jpg'];
-let contFoto = 0;
-foto.src = fotosPC[0]
+    let fotosPC = ['./IMG/01.jpg', './IMG/02.jpg', './IMG/03.jpg', './IMG/04.jpg', './IMG/05.jpg', './IMG/06.jpg', './IMG/07.jpg'];
+    let contFoto = 0;
+    foto.src = fotosPC[0]
 
-function frente() {
-    contFoto++;
-    foto.src = fotosPC[contFoto];
-    if (contFoto == 7) {
-        contFoto = 6;
+    function frente() {
+        contFoto++;
         foto.src = fotosPC[contFoto];
+        if (contFoto == 7) {
+            contFoto = 6;
+            foto.src = fotosPC[contFoto];
+        }
     }
-}
-function tras() {
-    contFoto--;
-    foto.src = fotosPC[contFoto];
-    if (contFoto == -1) {
-        contFoto = 0;
+    function tras() {
+        contFoto--;
         foto.src = fotosPC[contFoto];
+        if (contFoto == -1) {
+            contFoto = 0;
+            foto.src = fotosPC[contFoto];
+        }
     }
-}
 </script>

@@ -42,33 +42,71 @@ function closeModalCad() {
     closecadastro.style.height = '0';
 }
 
+/* modal review */
+var reviewAtivo = 0;
+
+function review(clicked_id) {
+    var id_review = clicked_id;
+    var reviewID = document.getElementById(id_review);
+
+    if (reviewAtivo == 0) {
+        reviewID.style.height = '73vh';
+        reviewID.style.transition = '1.3s';
+        reviewID.style.position = 'fixed';
+        reviewID.style.transform = 'translate(-50%, -50%)';
+        reviewID.style.top = '50%';
+        reviewID.style.left = '50%';
+        reviewID.style.overflowY = 'scroll';
+        reviewAtivo = 1;
+    } else {
+        reviewID.style.width = '32%';
+        reviewID.style.margin = '10px';
+        reviewID.style.backgroundColor = 'rgb(29, 35, 41)';
+        reviewID.style.transition = '0.7s';
+        reviewID.style.height = '45vh';
+        reviewID.style.transform = 'none';
+        reviewID.style.top = '0%';
+        reviewID.style.left = '0%';
+        reviewID.style.position = 'initial';
+        reviewID.style.overflow = 'hidden';
+        reviewAtivo = 0;
+    }
+
+}
+
+function anim(){
+    var animat = document.getElementById('confirmLogin')
+    animat.style.display = 'block';
+}
 
 /* funcões login */
 
 function entrar() {
-    // aguardar();
     var formulario = new URLSearchParams(new FormData(form_login));
     fetch("/usuarios/autenticar", {
         method: "POST",
         body: formulario
     }).then(resposta => {
+        
 
         if (resposta.ok) {
+            anim();
 
-            resposta.json().then(json => {
-
-                sessionStorage.login_usuario_meuapp = json.loginUser;
-                sessionStorage.nome_usuario_meuapp = json.nomeUser;
-                window.location.href = "games.html";
-            });
+            setTimeout(function entrarsite(){
+                resposta.json().then(json => {
+    
+                    sessionStorage.login_usuario_meuapp = json.loginUser;
+                    sessionStorage.nome_usuario_meuapp = json.nomeUser;
+                    window.location.href = "games.html";
+                });
+            },3000);            
 
         } else {
-
+            alert('Login ou Senha errados!')
             console.log('Erro de login!');
 
             resposta.text().then(texto => {
                 console.error(texto);
-                // finalizar_aguardar(texto);
             });
         }
     });
@@ -123,16 +161,15 @@ function finalizar_sessao() {
 /* FUNÇÃO DE CADASTRAR */
 
 function cadastrar() {
-    // aguardar();
     var formulario = new URLSearchParams(new FormData(form_cadastro));
     fetch("/usuarios/cadastrar", {
         method: "POST",
         body: formulario
     }).then(function (response) {
-        
-        if (response.ok) {
 
-            // window.location.href='login.html';
+        if (response.ok) {
+            openModal();
+            closeModalCad();
             alert('Cadastro efetuado!')
 
         } else {
@@ -141,21 +178,8 @@ function cadastrar() {
             response.text().then(function (resposta) {
                 div_erro.innerHTML = resposta;
             });
-            // finalizar_aguardar();
         }
     });
 
     return false;
 }
-
-// function aguardar() {
-//     btn_entrar.disabled = true;
-//     img_aguarde.style.display='block';
-//     div_erro.style.display='none';
-// }
-
-// function finalizar_aguardar() {
-//     btn_entrar.disabled = false;
-//     img_aguarde.style.display='none';
-//     div_erro.style.display='block';
-// }

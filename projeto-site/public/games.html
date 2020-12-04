@@ -9,49 +9,11 @@
     <script type="text/javascript" src="./JS/script.js"></script>
     <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
 </head>
-
-<section style="height: 0; display: none;" id="loginGames" class="modal">
-    <div>
-        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
-
-        <form id="form_login" method="post" onsubmit="return entrar()">
-            <div class="inLogin">
-                <p>Login:</p> <input name="login" type="text">
-            </div>
-            <div class="inSenha">
-                <p>Senha:</p> <input name="senha" type="password">
-            </div>
-            <button onclick="entrar()" class="btnLoginGames" id="btn_entrar" type="submit">Login</button>
-        </form>
-        <center><button class="btnCloseModal" onclick="closeModal()"><i style="color: white;" class="far fa-times-circle fa-2x"></i></button></center>
-    </div>
-</section>
-<section style="height: 0; display: none;" id="cadastroGames" class="modal">
-    <div>
-        <center><i style="margin-top: 30px;" class="far fa-user fa-5x"></i></center>
-
-        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-            <div class="inLogin">
-                <p>Nome</p>
-                <input type="text" name="nome" class="input-padrao" required minlength="4">
-            </div>
-            <div class="inLogin">
-                <p>Login</p>
-                <input type="text" name="login" class="input-padrao" required minlength="4">
-            </div>
-            <div class="inLogin">
-                <p>Senha</p>
-                <input type="password" name="senha" class="input-padrao" required minlength="4">
-            </div>
-            </form>
-            <center><button class="btnCloseModal" onclick="closeModalCad()"><i style="color: white;" class="far fa-times-circle fa-2x"></i></button></center>
-    </div>
-</section>
 <script>
 
     let usuario;
 
-    verificar_autenticacao();
+    // verificar_autenticacao();
 
 
 </script>
@@ -65,7 +27,7 @@
                 <li><a href="index.html#space-title">Notícias</a></li>
                 <li><a onclick="openModal()" href="#">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <span style="margin-left: 400px; display: flex;">Bem vindo, </span><span id="user"> </span>
+                <span style="margin-left: 400px; display: flex;">Bem vindo,</span><span style="margin-left: 5px;" id="user"> </span>
             </ul>
         </div>
     </header>
@@ -116,34 +78,33 @@
                 <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
                     lugar certo!</p>
                 <br>
-                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <p>Todos os direitos reservados &COPY; 2020</p>
                 <hr>
             </div>
             <div class="secondCard-footer">
-                    <div>
-                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
-                        <p>Git Hub</p>
-                    </div>
-                    <div>
-                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
-                        <p>Facebook</p>
-                    </div>
-                    <div>
-                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
-                        <p>Linkedin</p>
-                    </div>
-                    <div>
-                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
-                        <p>E-mail</p>
-                    </div>
-                    <div>
-                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
-                        <p>Telefone</p>
-                    </div>
+                <div>
+                    <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                    <p>Git Hub</p>
+                </div>
+                <div>
+                    <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                    <p>Linkedin</p>
+                </div>
+                <div>
+                    <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                    <p>E-mail</p>
+                </div>
+                <div>
+                    <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                    <p>Telefone</p>
+                </div>
             </div>
         </center>
     </section>
 </body>
 
 </html>
-

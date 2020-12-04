@@ -18,7 +18,7 @@
                 <li><a href="#space">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <li style="margin-left: 500px;"><a onclick="logoff()" href="#">Sair</a></li>
+                <li style="margin-left: 500px;"><a style="color: black;" onclick="logoff()" href="#">Sair</a></li>
             </ul>
         </div>
     </header>
@@ -33,11 +33,11 @@
             </div>
             <a href="XBOX.html">
                 <i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
-                    class="fas fa-arrow-alt-circle-right fa-5x"></i>
+                    class="fas fa-arrow-alt-circle-right fa-3x"></i>
             </a>
             <a href="PC.html">
                 <i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
-                    class="fas fa-arrow-alt-circle-left fa-5x"></i>
+                    class="fas fa-arrow-alt-circle-left fa-3x"></i>
             </a>
         </div>
     </section>
@@ -58,48 +58,106 @@
             </div>
         </div>
     </section>
+    <div id="space"></div>
+    <h1 style="font-weight: 400;" class="container">Games Reviews</h1>
+    <hr style="margin-bottom: 30px;" class="container">
 
     <section class="container">
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="uncharted" class="cardReview">
                 <img src="./IMG/08.jpg" alt="">
                 <h1>Uncharted 4: A Thief's End</h1>
                 <div>
                     <p>8</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Na história, os jogadores controlam Nathan Drake, um caçador de tesouros. Junto com seu antigo
+                        parceiro Victor Sullivan, eles procuram por pistas para a localização do tesouro perdido do
+                        pirata Henry Avery. A Thief's End é jogado a partir de uma perspectiva em terceira pessoa e
+                        incorpora diversos elementos de plataforma na navegação pelos diferentes ambientes. Os jogadores
+                        usam armas de fogo, combate corpo a corpo e furtividade a fim de combaterem inimigos e
+                        solucionarem quebra-cabeças.
+                        <br><br>
+                        Desenvolvedora: Naughty Dog <br>
+                        Ano: 2016 <br>
+                        Plataformas: Playstation
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="tlou" class="cardReview">
                 <img src="./IMG/09.jpg" alt="">
                 <h1>The Last of Us</h1>
                 <div>
                     <p>9</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Na história, os jogadores controlam Joel, um homem encarregado de escoltar uma adolescente
+                        chamada Ellie através de um Estados Unidos pós-apocalíptico. The Last of Us é jogado a partir de
+                        uma perspectiva em terceira pessoa, com os jogadores usando armas de fogo, armas improvisadas e
+                        furtividade a fim de defenderem-se de humanos hostis e criaturas canibalísticas infectadas por
+                        uma mutação do fungo Cordyceps. Um "Modo de Escuta" permite a localização de inimigos por meio
+                        de uma escuta e percepção espacial aprimoradas. Armas podem ser melhoradas usando itens
+                        recolhidos do ambiente. Há um modo multijogador online em que até oito jogadores podem entrar em
+                        diferentes modos de partidas cooperativas ou competitivas.
+                        <br><br>
+                        Desenvolvedora: Naughty Dog <br>
+                        Ano: 2013 <br>
+                        Plataformas: Playstation
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="days" class="cardReview">
                 <img src="./IMG/10.jpg" alt="">
                 <h1>Days Gone</h1>
                 <div>
                     <p>8.5</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Days Gone é um jogo de mundo aberto com zumbis em um cenário pós-apocalíptico jogado em uma
+                        perspectiva de terceira-pessoa. Os jogadores controlam Deacon St. John (Samuel Witwer), um
+                        viajante e caçador de recompensas que prefere viver uma vida perigosa na estrada, ao invés da
+                        vida nos acampamentos na floresta. O jogo se passa dois anos depois de que uma pandemia global
+                        ocorreu e que matou quase toda a humanidade, transformando milhares de pessoas em "Freakers",
+                        zumbis que não pensam mas evoluem rapidamente. Na E3 de 2016, numa demonstração do jogo, dois
+                        tipos de "Freakers" foram revelados, Newts e Hordes (Tritões e Hordas).
+
+                        Como o jogo é ambientado em um mundo aberto, os jogadores podem completar os objetivos de várias
+                        formas, tais como agir furtivamente ou escolher uma abordagem agressiva por meio de armas de
+                        curto e longo alcance. A dinâmica de dia e noite é um destaque do jogo, o que faz os Freakers
+                        fracos e lentos durante o dia, porém rápidos e agressivos durante a noite. Motos podem ser
+                        usadas para explorar o mundo do jogo. Os jogadores são capazes de construir novos itens para
+                        melhorar a eficiência no combate.
+                        <br><br>
+                        Desenvolvedora: SIE Bend Studio <br>
+                        Ano: 2019 <br>
+                        Plataformas: Playstation
+                    </p>
+                </center>
             </div>
         </div>
 
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="fifa" class="cardReview">
                 <img src="./IMG/11.jpg" alt="">
                 <h1>Fifa 21</h1>
                 <div>
                     <p>7</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="spider" class="cardReview">
                 <img src="./IMG/12.jpg" alt="">
                 <h1>Spider-Man</h1>
                 <div>
                     <p>9</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="god" class="cardReview">
                 <img src="./IMG/13.jpg" alt="">
                 <h1>God of War</h1>
                 <div>
@@ -108,14 +166,14 @@
             </div>
         </div>
         <div style="display: flex; margin-bottom: 50px;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="detroit" class="cardReview">
                 <img src="./IMG/22.jpg" alt="">
-                <h1>Detroit: Become Human</h1>
+                <h1>Detroit:Become Human</h1>
                 <div>
                     <p>8</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="ffvii" class="cardReview">
                 <img src="./IMG/23.jpg" alt="">
                 <h1>Final Fantasy VII Remake</h1>
                 <div>
@@ -142,30 +200,30 @@
                 <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
                     lugar certo!</p>
                 <br>
-                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <p>Todos os direitos reservados &COPY; 2020</p>
                 <hr>
             </div>
             <div class="secondCard-footer">
-                    <div>
-                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
-                        <p>Git Hub</p>
-                    </div>
-                    <div>
-                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
-                        <p>Facebook</p>
-                    </div>
-                    <div>
-                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
-                        <p>Linkedin</p>
-                    </div>
-                    <div>
-                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
-                        <p>E-mail</p>
-                    </div>
-                    <div>
-                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
-                        <p>Telefone</p>
-                    </div>
+                <div>
+                    <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                    <p>Git Hub</p>
+                </div>
+                <div>
+                    <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                    <p>Linkedin</p>
+                </div>
+                <div>
+                    <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                    <p>E-mail</p>
+                </div>
+                <div>
+                    <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                    <p>Telefone</p>
+                </div>
             </div>
         </center>
     </section>

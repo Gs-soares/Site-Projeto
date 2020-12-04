@@ -18,22 +18,25 @@
                 <li><a href="#space">Notícias</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="#rodape">Contato</a></li>
-                <li style="margin-left: 500px;"><a onclick="logoff()" href="#">Sair</a></li>
+                <li style="margin-left: 500px;"><a style="color: black;" onclick="logoff()" href="#">Sair</a></li>
             </ul>
         </div>
     </header>
 
-    <div id="space"></div> 
+    <div id="space"></div>
 
-    
+
     <section class="titlePC">
         <div class="container">
-            <div style="margin: 0; width: 20%; float: left;"><h1>Xbox</h1></div>
-            <a href="PS.html"><i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;" class="fas fa-arrow-alt-circle-left fa-5x"></i></a>
+            <div style="margin: 0; width: 20%; float: left;">
+                <h1>Xbox</h1>
+            </div>
+            <a href="PS.html"><i style="float: right; color: rgb(255, 255, 255); margin-top: 20px;"
+                    class="fas fa-arrow-alt-circle-left fa-3x"></i></a>
         </div>
     </section>
 
-<section class="carrosel">
+    <section class="carrosel">
         <div class="imgCarrosel">
             <div>
                 <button class="btnBack" onclick="trasXB()">
@@ -45,51 +48,128 @@
                 <button class="btnFront" onclick="frenteXB()">
                     <i class="fas fa-arrow-alt-circle-right fa-5x"></i>
                 </button>
-            </div>   
+            </div>
         </div>
     </section>
-
+    <div id="space"></div>
+    <h1 style="font-weight: 400;" class="container">Games Reviews</h1>
+    <hr style="margin-bottom: 30px;" class="container">
     <section class="container">
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="ryse" class="cardReview">
                 <img src="./IMG/15.jpg" alt="">
                 <h1>Ryse: Son of Rome</h1>
                 <div>
                     <p>7</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        O jogo se passa na Roma Antiga em que o personagem se chama Marius Tito. Ele terá de trabalhar
+                        com a infantaria romana, dando comandos para eles, bem como evento em tempo rápido de
+                        finalização controlados durante o combate. É uma história fictícia no mundo alternativo que não
+                        é historicamente preciso tanto na história ou as armas mostradas e táticas. A história segue a
+                        vida de Marius desde a infância para se tornar um líder no exército romano. A história é
+                        descrita como um "um conto épico de vingança abrangendo toda uma vida". Crytek confirmou 15
+                        personagens de nível herói com os mesmos detalhes de Marius. Os jogadores controlam Marius
+                        usando o controlador e, simultaneamente, controlam sua legião através de comandos de voz do
+                        Kinect.
+                        <br><br>
+                        Desenvolvedora: Crytek <br>
+                        Ano: 2013 <br>
+                        Plataformas: Xbox
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="quantum" class="cardReview">
                 <img src="./IMG/16.jpg" alt="">
                 <h1>Quantum Break</h1>
                 <div>
                     <p>7.9</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Quantum Break é jogado numa perspectiva em terceira pessoa com um sistema de cobertura. O
+                        jogador controla Jack Joyce, uma pessoa que consegue manipular e “congelar” o tempo. Juntamente
+                        com esses poderes, os jogadores usam uma grande variedade de armas de fogo para derrotar os
+                        inimigos. Joyce pode parar o tempo temporariamente, dando-lhe a possibilidade de fugir dos
+                        ataques inimigos, provocar um "Time Blast" (um projéctil ofensivo), e reverter a direcção das
+                        balas. Joyce pode interagir com o ambiente, criando efeitos que causam dano aos inimigos. A
+                        habilidade "Time Rush" pode também ser usada como tele-transporte, permitindo a Joyce colocar-se
+                        junto a um inimigo e neutralizá-lo com um golpe rápido. Em adição, os jogadores podem acelerar o
+                        tempo e trocar posições para diversificar os inimigos distraídos. Para se defender Joyce pode
+                        criar um escudo, o "Time Shield", que reflecte balas, fazer "Time Dodge", que dá para fazer
+                        movimentos rápidos ou simplesmente esconder-se atrás de objectos.
+                        <br><br>
+                        Desenvolvedora: Remedy Entertainment <br>
+                        Ano: 2016 <br>
+                        Plataformas: Xbox
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="state" class="cardReview">
                 <img src="./IMG/17.jpg" alt="">
                 <h1>State of Decay</h1>
                 <div>
                     <p>8</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        State of Decay é uma série de jogos eletrônicos de horror de sobrevivência. Todos os jogos
+                        apresentam um ambiente de mundo aberto infestado de zumbis. O núcleo da jogabilidade principal
+                        gira em torno de encontrar e fortificar fortalezas, explorar o mundo para resgatar sobreviventes
+                        e coletar vários recursos, como alimentos e equipamentos, e defender a base contra o ataque de
+                        zumbis. O segundo jogo introduziu um modo multijogador cooperativo para quatro jogadores à
+                        franquia. Ao contrário de muitos outros jogos de zumbis no mercado, State of Decay não trata de
+                        matar zumbis. Em vez disso, o jogador deve tentar evitá-los, limpar e gerenciar recursos e
+                        interagir com outros sobreviventes. De acordo com Jeff Strain, o fundador da Undead Labs, a
+                        série explora o "elemento humano", como as pessoas interagem umas com as outras e fazem escolhas
+                        em um momento de desespero e desesperança.
+                        <br><br>
+                        Desenvolvedora: Undead Labs <br>
+                        Ano: 2018 <br>
+                        Plataformas: Xbox
+                    </p>
+                </center>
             </div>
         </div>
 
         <div style="display: flex;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="sea" class="cardReview">
                 <img src="./IMG/18.jpg" alt="">
                 <h1>Sea of Thieves</h1>
                 <div>
                     <p>8.5</p>
                 </div>
+                <br>
+                <center>
+                    <p class="textReview">
+                        Sea of Thieves é um jogo multiplayer cooperativo de ação e aventura, com temática pirata, jogado
+                        a partir de uma perspectiva em primeira pessoa. O jogo apresenta suportes em multi-plataforma
+                        entre PC's que tenham o sistema Windows 10 e o Xbox One. Um grupo de jogadores viaja e explora
+                        um mundo aberto através de um navio pirata e assume papéis diferentes, como direção, içamento de
+                        velas, navegação e disparo de canhões. Os jogadores embarcam em missões, colecionam saques e
+                        entram em combate com outros jogadores. Sea of Thieves é um mundo de jogo compartilhado, o que
+                        significa que grupos de jogadores se encontrarão regularmente durante suas aventuras. O jogo tem
+                        um estilo de arte de desenho animado e um mecanismo de física exagerado que permite aos
+                        jogadores realizar acrobacias, como ser atingido por canhões de navios.
+                        <br><br>
+                        Desenvolvedora: Rare <br>
+                        Ano: 2018 <br>
+                        Plataformas: Xbox / PC
+                    </p>
+                </center>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="gears" class="cardReview">
                 <img src="./IMG/19.jpg" alt="">
                 <h1>Gears of War 4</h1>
                 <div>
                     <p>8</p>
                 </div>
             </div>
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="forza" class="cardReview">
                 <img src="./IMG/20.jpg" alt="">
                 <h1>Forza</h1>
                 <div>
@@ -99,7 +179,7 @@
         </div>
 
         <div style="display: flex; margin-bottom: 50px;" class="cont">
-            <div class="cardReview">
+            <div onclick="review(this.id)" id="sunset" class="cardReview">
                 <img src="./IMG/24.jpg" alt="">
                 <h1>Sunset Overdrive</h1>
                 <div>
@@ -130,30 +210,30 @@
                 <p>Então se você está procurando um lugar para saber tudo sobre jogos de gamer pra gamer você está no
                     lugar certo!</p>
                 <br>
-                <p>Todos os direitos rezervados &COPY; 2020</p>
+                <p>Todos os direitos reservados &COPY; 2020</p>
                 <hr>
             </div>
             <div class="secondCard-footer">
-                    <div>
-                        <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
-                        <p>Git Hub</p>
-                    </div>
-                    <div>
-                        <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
-                        <p>Facebook</p>
-                    </div>
-                    <div>
-                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
-                        <p>Linkedin</p>
-                    </div>
-                    <div>
-                        <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
-                        <p>E-mail</p>
-                    </div>
-                    <div>
-                        <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
-                        <p>Telefone</p>
-                    </div>
+                <div>
+                    <a href="https://github.com/Gs-soares"><i class="fab fa-github fa-4x"></i></a><br>
+                    <p>Git Hub</p>
+                </div>
+                <div>
+                    <a href="https://facebook.com"><i class="fab fa-facebook fa-4x"></i></a><br>
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-4x"></i></a><br>
+                    <p>Linkedin</p>
+                </div>
+                <div>
+                    <a href="https://gmail.com"><i class="fas fa-at fa-4x"></i></a><br>
+                    <p>E-mail</p>
+                </div>
+                <div>
+                    <a href=""><i class="fas fa-phone fa-4x"></i></a><br>
+                    <p>Telefone</p>
+                </div>
             </div>
         </center>
     </section>
